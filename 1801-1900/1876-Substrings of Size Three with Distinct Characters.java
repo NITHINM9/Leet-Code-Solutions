@@ -27,7 +27,7 @@
 // The good substrings are "abc", "bca", "cab", and "abc".
  
 
-// Constraints:
+// Constraints:  
 
 // 1 <= s.length <= 100
 // s​​​​​​ consists of lowercase English letters.
