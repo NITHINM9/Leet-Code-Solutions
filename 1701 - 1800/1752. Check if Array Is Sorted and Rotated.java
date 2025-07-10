@@ -32,3 +32,19 @@
 // 1 <= nums.length <= 100
 
 
+//solution ->
+class Solution {
+    public boolean check(int[] nums) {
+        int countDrops = 0; 
+        for (int i = 0; i < nums.length; i++) {
+            int nextIndex = (i + 1) % nums.length;
+            if (nums[i] > nums[nextIndex]) {
+                countDrops++; 
+            }
+            if (countDrops > 1) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
