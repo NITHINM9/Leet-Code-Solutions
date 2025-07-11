@@ -33,7 +33,7 @@
 // -1000 <= nums[i] <= 1000
 
 
-//solution 1 -> 
+//solution 1 ->  
 class Solution {
     public int findMiddleIndex(int[] nums) {
         int totalSum = 0;
