@@ -25,7 +25,7 @@
 // 0 <= k <= 105
 
 
-//solution
+//solution  
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         Map< Integer , Integer > map = new HashMap<>(nums.length);
