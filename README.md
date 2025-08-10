@@ -38,9 +38,12 @@ etc......
 
 🛠 Tech Stack
 Languages: Java, Python.
-Tools: IntelliJ IDEA / VS Code, Git, GitHub
-Version Control: Git
-Platform: LeetCode + Other Competitive Programming Sources
+
+Tools: IntelliJ IDEA / VS Code, Git, GitHub.
+
+Version Control: Git.
+
+Platform: LeetCode + Other Competitive Programming Sources.
 
 
 
