@@ -1,17 +1,60 @@
-# 📚 Leet-Code-Solutions by Nithin
+# 📚 Leet-Code-Solutions and Algorithm Practice — Nithin
 
-Welcome to my LeetCode Practice Repository!
-This repo contains my solutions to problems from LeetCode — written, tested, and maintained to improve my problem-solving skills, coding efficiency, and algorithmic thinking.
+Welcome to my Algorithm & LeetCode Practice Repository!
+This is my daily coding journal, containing solutions to problems from LeetCode and other algorithm practice sources.
+I focus on data structures, algorithms, and pattern-based problem solving to become a better competitive programmer and software engineer.
 
 📅 Progress Tracker
 Problems Solved:
 
-Languages Used: Java, Python, SQL (as per problem requirements)
 
-Focus Areas:
+🚀 Problem-Solving Patterns I Practice
+I consistently apply and master the following algorithmic patterns:
 
-Data Structures (Arrays, Linked Lists, Trees, Graphs, Stacks, Queues, Heaps)
+Sliding Window – optimize subarray problems
 
-Algorithms (Sorting, Searching, Dynamic Programming, Greedy, Backtracking)
+Two Pointers – solve problems with linear scans efficiently
 
-Complexity Optimization (Time & Space)
+Fast & Slow Pointers – detect cycles, linked list tricks
+
+Recursion & Backtracking – explore all possibilities
+
+Binary Search – search in sorted arrays/logarithmic optimizations
+
+Prefix Sum – range sum queries in O(1)
+
+Greedy Algorithms – local optimal → global optimal solutions
+
+Dynamic Programming (DP) – optimal substructure, overlapping subproblems
+
+Graph Traversal – BFS, DFS, shortest path algorithms
+
+Heap/Priority Queue – scheduling & top-k problems
+
+etc......
+
+🛠 Tech Stack
+Languages: Java, Python.
+
+Tools: IntelliJ IDEA / VS Code, Git, GitHub
+
+Version Control: Git
+
+Platform: LeetCode + Other Competitive Programming Sources
+
+📈 Commit Pattern
+✅ Daily Challenges
+
+📦 New Algorithm Patterns
+
+🔄 Refactoring for Optimization
+
+🏆 My Goals
+Solve 500+ problems on LeetCode & other platforms
+
+Master core algorithm patterns for competitive coding
+
+Improve coding speed & accuracy in timed contests
+
+
+
