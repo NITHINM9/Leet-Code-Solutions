@@ -46,3 +46,19 @@ class Solution {
         return true;
     }
 }
+
+//solution 2
+class Solution {
+    public boolean kLengthApart(int[] nums, int k) {
+        int lastIndex = -1; // Initialize to -1 to handle the case when the first element is 1
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 1) {
+                if (lastIndex != -1 && i - lastIndex - 1 < k) {
+                    return false; // Not enough distance between two 1's
+                }
+                lastIndex = i; // Update the last index of 1
+            }
+        }
+        return true; // All 1's are at least k places apart
+    }
+}
