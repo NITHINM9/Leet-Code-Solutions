@@ -22,3 +22,28 @@
 // Constraints:
 
 // 1 <= left <= right <= 104
+
+//solution
+class Solution {
+    public List<Integer> selfDividingNumbers(int left, int right) {
+        List<Integer> list = new ArrayList<>();
+        for (int i = left; i <= right; i++) {
+            if (isSelfDiv(i)) {
+                list.add(i);
+            }
+        }
+        return list;
+    }
+
+    private boolean isSelfDiv(int num) {
+        int temp = num;
+        while (temp > 0) {
+            int div = temp % 10;
+            if (div == 0 || num % div != 0) {
+                return false;
+            }
+            temp /= 10;
+        }
+        return true;
+    }
+}
