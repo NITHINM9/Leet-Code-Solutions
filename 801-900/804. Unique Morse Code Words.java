@@ -36,3 +36,24 @@
 // 1 <= words.length <= 100
 // 1 <= words[i].length <= 12
 // words[i] consists of lowercase English letters.
+
+//solution - >
+import java.util.*;
+
+class Solution {
+    public int uniqueMorseRepresentations(String[] words) {
+        String[] morse = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---",
+                          "-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-",
+                          "..-","...-",".--","-..-","-.--","--.."};
+        Set<String> uniqueCodes = new HashSet<>();
+        for (String word : words) {
+            StringBuilder code = new StringBuilder();
+            for (char ch : word.toCharArray()) {
+                code.append(morse[ch - 'a']);
+            }
+            uniqueCodes.add(code.toString());
+        }
+        
+        return uniqueCodes.size();
+    }
+}
