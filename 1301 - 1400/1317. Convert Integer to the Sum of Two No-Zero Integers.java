@@ -30,3 +30,82 @@
 // 2 <= n <= 104
 
 
+//solution 1 -> Brute Force
+// Time Complexity: O(n * log n)
+class Solution {
+    public int[] getNoZeroIntegers(int n) {
+        for(int i = 1; i < n; i++){
+            if(isNoZero(i) && isNoZero(n - i)){
+                return new int[]{i, n - i};
+            }
+        }
+        return new int[]{};
+    }
+    
+    private boolean isNoZero(int num){
+        while(num > 0){
+            if(num % 10 == 0){
+                return false;
+            }
+            num /= 10;
+        }
+        return true;
+    }
+}
+
+//solution 2 -> Optimized Approach
+// Time Complexity: O(n * log n)
+class Solution {
+    public int[] getNoZeroIntegers(int n) {
+        for(int i = 1; i < n; i++){
+            if(isNoZero(i) && isNoZero(n - i)){
+                return new int[]{i, n - i};
+            }
+        }
+        return new int[]{};
+    }
+    
+    private boolean isNoZero(int num){
+        String str = String.valueOf(num);
+        return !str.contains("0");
+    }
+}
+
+//solution 3 -> Optimized Approach
+// Time Complexity: O(n * log n)
+class Solution {
+    public int[] getNoZeroIntegers(int n) {
+        for(int i = 1; i < n; i++){
+            if(isNoZero(i) && isNoZero(n - i)){
+                return new int[]{i, n - i};
+            }
+        }
+        return new int[]{};
+    }
+    
+    private boolean isNoZero(int num){
+        return !Integer.toString(num).contains("0");
+    }
+}
+
+//solution 4 -> Optimized Approach
+// Time Complexity: O(n * log n)
+class Solution {
+    public int[] getNoZeroIntegers(int n) {
+        for(int i = 1; i < n; i++){
+            if(isNoZero(i) && isNoZero(n - i)){
+                return new int[]{i, n - i};
+            }
+        }
+        return new int[]{};
+    }
+    
+    private boolean isNoZero(int num){
+        for(char c : String.valueOf(num).toCharArray()){
+            if(c == '0'){
+                return false;
+            }
+        }
+        return true;
+    }
+}
