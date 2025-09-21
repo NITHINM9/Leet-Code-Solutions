@@ -26,3 +26,18 @@
 // nums.length == 2n
 // 1 <= nums[i] <= 10^3
 
+//solution ->
+class Solution {
+    public int[] shuffle(int[] nums, int n) {
+        int j = n, i = 0 , k = 0;
+        int result[] = new int[nums.length];
+        while(k < nums.length){
+            result[k] = nums[i];
+            result[k+1] = nums[j];
+            k+=2;
+            i++;
+            j++;
+        }
+        return result;
+    }
+}
