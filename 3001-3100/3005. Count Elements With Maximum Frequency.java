@@ -47,3 +47,26 @@ class Solution {
         return count;
     }
 }
+
+//solution 2 ->
+class Solution {
+    public int maxFrequencyElements(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        int max = 0;
+        int count = 0;
+
+        for (int num : nums) {
+            int freq = map.getOrDefault(num, 0) + 1;
+            map.put(num, freq);
+
+            if (freq > max) {
+                max = freq;
+                count = freq; 
+            } else if (freq == max) {
+                count += freq;
+            }
+        }
+        return count;
+    }
+}
+
