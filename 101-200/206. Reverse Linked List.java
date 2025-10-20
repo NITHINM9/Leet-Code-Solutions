@@ -26,3 +26,33 @@
 
 // Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
 
+//solution 1 -> Iterative
+// Time Complexity: O(n)    
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
+        while(curr != null){
+            ListNode nextTemp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = nextTemp;
+        }
+        return prev;
+    }
+}
+
+//solution 2 -> Recursive
+// Time Complexity: O(n)    
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        return reverse(null, head);
+    }
+    
+    private ListNode reverse(ListNode prev, ListNode curr){
+        if(curr == null) return prev;
+        ListNode nextTemp = curr.next;
+        curr.next = prev;
+        return reverse(curr, nextTemp);
+    }
+}
